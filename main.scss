@@ -25,7 +25,8 @@
 	// display
 	display: flex;
 	flex-direction: column;
-	gap: 40px;
+	flex-wrap: wrap;
+	gap: 0px;
 
 	background-color: #ddd;
 	padding: 50px 50px;
@@ -91,7 +92,7 @@
 
 		// li items
 		li {
-			width: 100%;
+			width: 70%;
 			background-color: #fff;
 			padding: 12px 10px;
 			font-size: 0.8rem;
