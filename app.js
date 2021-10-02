@@ -27,6 +27,7 @@ reset.addEventListener('click', function () {
 		ul.children[k].textContent = `Task-${k + 1}`;
 		ul.children[k].style.fontSize = '.8rem';
 		ul.children[k].style.color = 'hsl(1, 10%, 50%)';
+		i = 0;
 	}
 });
 
