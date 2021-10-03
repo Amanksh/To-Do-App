@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
 * {
 	padding: 0;
 	margin: 0;
@@ -95,13 +97,18 @@
 			width: 70%;
 			background-color: #fff;
 			padding: 12px 10px;
-			font-size: 0.8rem;
+			position: relative;
+
+			// Font styles
+
+			font-size: 1rem;
 			font-weight: bold;
+
 			text-transform: uppercase;
 			letter-spacing: 1px;
 			color: hsl(1, 10%, 50%);
 			border-radius: 6px;
-			font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS',
+			font-family: 'fira code', 'Gill Sans MT', Calibri, 'Trebuchet MS',
 				sans-serif;
 		}
 	}
@@ -125,6 +132,19 @@
 	background-color: hsl(0, 100%, 30%);
 }
 
-body {
-	font-weight: bold;
+li.done::after {
+	content: '';
+	position: absolute;
+	border-color: #009933;
+	border-style: solid;
+	border-width: 0 0.3em 0.25em 0;
+	height: 1em;
+	top: 0.6em;
+	right: 0.6em;
+
+	transform: rotate(45deg);
+	width: 0.5em;
+}
+li.done {
+	background-color: #ccff99 !important;
 }
